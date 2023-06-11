@@ -104,3 +104,6 @@ Cypress.Commands.add('addAxeCode', () => {
     })
   })
 })
+Cypress.Commands.add("getType", (selector) => {
+  return cy.get(`[type=${selector}]`)
+})
